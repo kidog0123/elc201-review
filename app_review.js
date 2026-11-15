@@ -118,6 +118,12 @@ const examTypeBadge = document.getElementById('examTypeBadge');
 const examMainTitle = document.getElementById('examMainTitle');
 const examSubInfo = document.getElementById('examSubInfo');
 const btnResetExam = document.getElementById('btnResetExam');
+const btnShuffleExam = document.getElementById('btnShuffleExam');
+const btnRestoreExam = document.getElementById('btnRestoreExam');
+const shuffleExamLabel = document.getElementById('shuffleExamLabel');
+const btnShuffleCard = document.getElementById('btnShuffleCard');
+const btnMobShuffleDrawer = document.getElementById('btnMobShuffleDrawer');
+const toastNotice = document.getElementById('toastNotice');
 const btnCheatsheet = document.getElementById('btnCheatsheet');
 const modalCheatsheet = document.getElementById('modalCheatsheet');
 const btnCloseModal = document.getElementById('btnCloseModal');
@@ -295,6 +301,11 @@ function openExam(examId, startIndex = 0) {
     currentQuestionIndex = startIndex;
     filterMode = 'all';
 
+    // Backup original questions order once
+    if (!currentExam._originalQuestions) {
+        currentExam._originalQuestions = [...currentExam.questions];
+    }
+
     // Header metadata
     if (examMainTitle) examMainTitle.textContent = currentExam.code;
     if (examSubInfo) examSubInfo.textContent = currentExam.shortTitle || 'HOLA';
@@ -326,6 +337,7 @@ function openExam(examId, startIndex = 0) {
     renderQuestionGrid();
     renderCurrentQuestion();
     updateSidebarStats();
+    updateShuffleUI();
 }
 
 function closeExam() {
@@ -672,6 +684,83 @@ function setupTouchGestures() {
     }
 }
 
+// ================= SHUFFLE QUESTIONS LOGIC =================
+function showToast(message) {
+    if (!toastNotice) return;
+    toastNotice.textContent = message;
+    toastNotice.classList.add('show');
+    clearTimeout(toastNotice._timer);
+    toastNotice._timer = setTimeout(() => {
+        toastNotice.classList.remove('show');
+    }, 2200);
+}
+
+function updateShuffleUI() {
+    if (!currentExam) return;
+    const isShuffled = !!currentExam.isShuffled;
+    if (btnRestoreExam) {
+        btnRestoreExam.style.display = isShuffled ? 'inline-flex' : 'none';
+    }
+    if (shuffleExamLabel) {
+        shuffleExamLabel.textContent = isShuffled ? 'Tráo tiếp' : 'Tráo câu hỏi';
+    }
+    if (btnShuffleCard) {
+        if (isShuffled) {
+            btnShuffleCard.classList.add('active-bookmark');
+            btnShuffleCard.title = 'Câu hỏi đang được tráo ngẫu nhiên. Bấm để tráo lượt khác';
+        } else {
+            btnShuffleCard.classList.remove('active-bookmark');
+            btnShuffleCard.title = 'Tráo đổi ngẫu nhiên vị trí các câu hỏi';
+        }
+    }
+}
+
+function shuffleExamQuestions() {
+    if (!currentExam || !currentExam.questions || currentExam.questions.length <= 1) {
+        showToast('Không có câu hỏi để tráo');
+        return;
+    }
+
+    // Backup original order once
+    if (!currentExam._originalQuestions) {
+        currentExam._originalQuestions = [...currentExam.questions];
+    }
+
+    // Fisher-Yates shuffle
+    const qList = currentExam.questions;
+    for (let i = qList.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = qList[i];
+        qList[i] = qList[j];
+        qList[j] = temp;
+    }
+
+    currentExam.isShuffled = true;
+    currentQuestionIndex = 0;
+
+    renderQuestionGrid();
+    renderCurrentQuestion();
+    updateSidebarStats();
+    updateShuffleUI();
+
+    showToast(`🔀 Đã tráo đổi vị trí ${qList.length} câu hỏi ngẫu nhiên!`);
+}
+
+function restoreOriginalQuestionOrder() {
+    if (!currentExam || !currentExam._originalQuestions) return;
+
+    currentExam.questions = [...currentExam._originalQuestions];
+    currentExam.isShuffled = false;
+    currentQuestionIndex = 0;
+
+    renderQuestionGrid();
+    renderCurrentQuestion();
+    updateSidebarStats();
+    updateShuffleUI();
+
+    showToast('✓ Đã khôi phục thứ tự câu hỏi ban đầu!');
+}
+
 function setupGlobalEvents() {
     // Navigation
     if (brandHome) brandHome.addEventListener('click', closeExam);
@@ -784,6 +873,15 @@ function setupGlobalEvents() {
             }
         });
     }
+
+    // Attach Shuffle Listeners
+    if (btnShuffleExam) btnShuffleExam.addEventListener('click', shuffleExamQuestions);
+    if (btnShuffleCard) btnShuffleCard.addEventListener('click', shuffleExamQuestions);
+    if (btnMobShuffleDrawer) btnMobShuffleDrawer.addEventListener('click', () => {
+        shuffleExamQuestions();
+        if (modalMobileMatrix) modalMobileMatrix.style.display = 'none';
+    });
+    if (btnRestoreExam) btnRestoreExam.addEventListener('click', restoreOriginalQuestionOrder);
 
     // Reset Exam
     if (btnResetExam) {
