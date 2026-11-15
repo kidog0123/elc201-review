@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FUSTATION - Luyện Thi ELC201 (Mobile & Desktop)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- KaTeX for math formulas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Global Header -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="brand" id="brandHome" title="Về trang chủ">
+                <span class="brand-fu">FU</span><span class="brand-station">STATION</span>
+            </div>
+            
+            <div class="user-profile">
+                <div class="avatar-wrapper">
+                    <img class="user-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="Avatar" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><circle cx=%2220%22 cy=%2220%22 r=%2220%22 fill=%22%23cbd5e1%22/><text x=%2220%22 y=%2225%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22%23475569%22 font-weight=%22bold%22>B</text></svg>'">
+                    <span class="badge-dot">1</span>
+                </div>
+                <div class="user-info">
+                    <div class="user-name">Thiều Nguyễn Quốc Bảo</div>
+                    <div class="user-id">SE211092</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main App Container -->
+    <div class="app-body">
+        
+        <!-- ================= VIEW 1: EXAM LIST (COURSE DASHBOARD) ================= -->
+        <section class="dashboard-view" id="dashboardView">
+            <div class="dashboard-header">
+                <div class="course-pill">Môn học • ELC201</div>
+                <h1 class="course-title">Kỹ Thuật Mạch Điện Tử (Electronic Circuits)</h1>
+                <p class="course-subtitle">Kho đề thi trắc nghiệm FE & RE chính thức — Tối ưu hoàn hảo cho cả điện thoại và máy tính</p>
+                
+                <div class="dashboard-stats-strip">
+                    <div class="stat-chip">
+                        <span class="chip-num" id="totalQuestionsCount">250</span>
+                        <span class="chip-lbl">Câu hỏi trắc nghiệm</span>
+                    </div>
+                    <div class="stat-chip">
+                        <span class="chip-num">5</span>
+                        <span class="chip-lbl">Bộ đề chuẩn FE/RE</span>
+                    </div>
+                    <div class="stat-chip">
+                        <span class="chip-num" id="totalAnsweredCount">0</span>
+                        <span class="chip-lbl">Câu đã làm</span>
+                    </div>
+                    <div class="stat-chip accent">
+                        <span class="chip-num" id="overallAccuracy">0%</span>
+                        <span class="chip-lbl">Tỉ lệ đúng</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exam-cards-grid" id="examCardsGrid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- ================= VIEW 2: EXAM PRACTICE VIEW ================= -->
+        <section class="practice-view" id="practiceView" style="display: none;">
+            
+            <!-- Exam Meta Top Bar -->
+            <div class="exam-header-bar">
+                <div class="header-bar-left">
+                    <button class="btn-back" id="btnBackToCourse">
+                        <span class="arrow-icon">←</span> Về môn ELC201
+                    </button>
+                    
+                    <div class="exam-tags">
+                        <span class="tag-badge tag-green" id="examTypeBadge">Final Exam</span>
+                        <span class="tag-badge tag-gray">ELC201</span>
+                        <span class="tag-badge tag-mode" id="examModeBadge">Chế độ chữ & sơ đồ</span>
+                    </div>
+                    
+                    <h2 class="exam-main-title" id="examMainTitle">ELC201_SU26_RE_617866</h2>
+                    <div class="exam-sub-info" id="examSubInfo">HOLA</div>
+                </div>
+
+                <div class="header-bar-right">
+                    <button class="btn-icon" id="btnCheatsheet" title="Ghi chú kiến thức">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </button>
+                    <button class="btn-action-outline" id="btnResetExam">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                        <span>Làm lại đề</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="exam-layout">
+                
+                <!-- Left Column: Navigation Sidebar (Desktop) -->
+                <aside class="exam-sidebar" id="examSidebar">
+                    <div class="sidebar-top-card">
+                        <div class="question-progress-label">
+                            <h3 class="q-current-title">Câu hỏi <span id="qIndexText">1</span> / <span id="qTotalText">50</span></h3>
+                            <p class="q-instruction">Chọn 1 đáp án</p>
+                        </div>
+
+                        <div class="nav-arrows-group">
+                            <button class="btn-nav-step" id="btnPrevQ">
+                                ‹ Trước
+                            </button>
+                            <button class="btn-nav-step" id="btnNextQ">
+                                Sau ›
+                            </button>
+                        </div>
+
+                        <div class="question-list-meta">
+                            <span class="list-title">Danh sách câu hỏi:</span>
+                            <button class="btn-collapse" id="btnToggleCollapse">Thu gọn ⌃</button>
+                        </div>
+
+                        <div class="filter-pills-row">
+                            <button class="filter-pill active" id="filterAll">Tất cả (<span id="filterAllCount">50</span>)</button>
+                            <button class="filter-pill" id="filterSaved">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                                Đã lưu (0)
+                            </button>
+                        </div>
+
+                        <!-- Question Grid: 5 cols x 10 rows -->
+                        <div class="question-grid-container" id="questionGridContainer">
+                            <div class="question-grid" id="questionGrid">
+                                <!-- Injected via JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Mini score bar -->
+                        <div class="sidebar-score-summary">
+                            <div class="score-line">
+                                <span class="lbl-correct">✓ Đúng: <b id="sideCorrectCount">0</b></span>
+                                <span class="lbl-wrong">✗ Sai: <b id="sideWrongCount">0</b></span>
+                                <span class="lbl-remaining">Còn: <b id="sideRemainCount">50</b></span>
+                            </div>
+                            <div class="mini-progress-track">
+                                <div class="mini-progress-fill" id="miniProgressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Column: Question Content & Options (with Two Side Navigation Buttons) -->
+                <main class="exam-main">
+                    
+                    <div class="question-wrapper-with-flanks">
+                        
+                        <!-- LEFT SIDE NAVIGATION BUTTON (Câu trước) -->
+                        <button class="side-nav-flank btn-flank-prev" id="btnFlankPrev" title="Về câu trước (Vuốt phải trên điện thoại)">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                            <span class="flank-tooltip">Trước</span>
+                        </button>
+
+                        <!-- Main Question Card -->
+                        <div class="question-card" id="questionCard">
+                            
+                            <!-- Top actions inside question card -->
+                            <div class="card-action-bar">
+                                <button class="btn-card-tool" id="btnToggleImageMode" title="Chuyển chế độ hiện hình (Tự động / Luôn hiện)">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                    <span id="imgModeLabel" style="font-size:12px; font-weight:600; margin-left:4px;">Hình: Tự động</span>
+                                </button>
+                                <button class="btn-card-tool" id="btnBookmarkQ" title="Lưu câu hỏi này">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                                </button>
+                                <button class="btn-card-tool" id="btnFlagQ" title="Báo cáo câu hỏi">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                                </button>
+                            </div>
+
+                            <!-- Question Prompt / Body -->
+                            <div class="question-prompt" id="questionPrompt">
+                                <!-- Text rendered here -->
+                            </div>
+
+                            <!-- Inline Diagram Card (Shown directly if question has a diagram!) -->
+                            <div class="diagram-inline-card" id="diagramInlineCard" style="display: none;">
+                                <div class="diagram-inline-header">
+                                    <div class="diagram-inline-label">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                        <span id="diagramCardTitle">Sơ đồ mạch / Hình vẽ</span>
+                                    </div>
+                                    <button class="btn-zoom-action" id="btnZoomDiagram" title="Click để mở ảnh to toàn màn hình">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                                        <span>Phóng to</span>
+                                    </button>
+                                </div>
+                                <div class="diagram-img-frame" id="diagramImgFrame" title="Click để phóng to toàn màn hình">
+                                    <img id="diagramInlineImg" class="diagram-inline-img" src="" alt="Sơ đồ câu hỏi" />
+                                </div>
+                            </div>
+
+                            <!-- Answer Options Stack -->
+                            <div class="options-list" id="optionsList">
+                                <!-- Injected options A, B, C, D with text -->
+                            </div>
+
+                            <!-- Feedback Banner (Exact match to screenshot!) -->
+                            <div class="answer-feedback-panel" id="answerFeedbackPanel" style="display: none;">
+                                <div class="feedback-status-row" id="feedbackStatusRow">
+                                    <span class="status-indicator-icon" id="feedbackIcon">✓</span>
+                                    <span class="status-message-text" id="feedbackMsgText">Bạn đã chọn đúng!</span>
+                                </div>
+                                <div class="feedback-correct-box">
+                                    <span class="correct-title-label">Đáp án đúng:</span>
+                                    <span class="correct-badge-value" id="correctBadgeValue">C</span>
+                                    <div class="correct-content-text" id="correctContentText"></div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom AI Assistant Pill (as in screenshot) -->
+                            <div class="card-bottom-widget">
+                                <button class="ai-assistant-pill" id="aiAssistantBtn">
+                                    <span class="ai-name">FUS AI Auto</span>
+                                    <svg class="ai-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                    <svg class="ai-send" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT SIDE NAVIGATION BUTTON (Câu sau) -->
+                        <button class="side-nav-flank btn-flank-next" id="btnFlankNext" title="Sang câu sau (Vuốt trái trên điện thoại)">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                            <span class="flank-tooltip">Sau</span>
+                        </button>
+
+                    </div>
+
+                </main>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MOBILE STICKY BOTTOM NAVIGATION BAR -->
+    <div class="mobile-sticky-bar" id="mobileStickyBar" style="display: none;">
+        <button class="btn-mob-step" id="btnMobPrev" title="Câu trước">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>Trước</span>
+        </button>
+
+        <button class="btn-mob-matrix-toggle" id="btnMobMatrixToggle">
+            <span class="mob-matrix-icon">☰</span>
+            <span class="mob-q-num">Câu <b id="mobCurrentNum">1</b>/<span id="mobTotalNum">50</span></span>
+        </button>
+
+        <button class="btn-mob-step btn-mob-step-next" id="btnMobNext" title="Câu sau">
+            <span>Sau</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+    </div>
+
+    <!-- MOBILE QUESTION MATRIX DRAWER / MODAL -->
+    <div class="modal-backdrop" id="modalMobileMatrix" style="display: none;">
+        <div class="modal-card modal-mobile-drawer">
+            <div class="modal-head">
+                <h3>Danh sách câu hỏi (<span id="mobDrawerCurrent">1</span>/<span id="mobDrawerTotal">50</span>)</h3>
+                <button class="btn-close-modal" id="btnCloseMobMatrix">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="mobile-drawer-stats">
+                    <span class="lbl-correct">✓ Đúng: <b id="mobCorrect">0</b></span>
+                    <span class="lbl-wrong">✗ Sai: <b id="mobWrong">0</b></span>
+                </div>
+                <div class="question-grid" id="questionGridMobile">
+                    <!-- Populated via JS for mobile drawer -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox / Zoom Modal -->
+    <div class="modal-backdrop" id="modalDiagramLightbox" style="display: none;">
+        <div class="modal-card modal-card-image">
+            <div class="modal-head">
+                <h3 id="lightboxTitle">🔍 Sơ đồ mạch & Hình gốc</h3>
+                <button class="btn-close-modal" id="btnCloseLightbox">✕</button>
+            </div>
+            <div class="modal-body-image">
+                <img id="lightboxImg" src="" alt="Sơ đồ mạch" class="lightbox-img" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Cheatsheet Modal -->
+    <div class="modal-backdrop" id="modalCheatsheet" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-head">
+                <h3>📖 Công thức & Tóm tắt ELC201</h3>
+                <button class="btn-close-modal" id="btnCloseModal">✕</button>
+            </div>
+            <div class="modal-body">
+                <h4>1. Op-Amp (Operational Amplifier)</h4>
+                <ul>
+                    <li>Inverting Amplifier: $A_v = - \frac{R_f}{R_1}$</li>
+                    <li>Non-inverting Amplifier: $A_v = 1 + \frac{R_f}{R_1}$</li>
+                    <li>Voltage Follower (Buffer): $A_v = 1$, $Z_{in} \approx \infty$, $Z_{out} \approx 0$</li>
+                    <li>Slew Rate: $SR = \frac{\Delta V_{out}}{\Delta t}$ (741 Op-Amp: $SR \approx 0.5\text{ V/}\mu\text{s}$)</li>
+                </ul>
+                <h4>2. JFET & BJT</h4>
+                <ul>
+                    <li>Shockley's Equation: $I_D = I_{DSS} \left(1 - \frac{V_{GS}}{V_P}\right)^2$</li>
+                    <li>Transconductance: $g_m = \frac{\Delta I_D}{\Delta V_{GS}} = g_{m0} \left(1 - \frac{V_{GS}}{V_P}\right)$</li>
+                    <li>Common Emitter: Phase shift $180^\circ$</li>
+                    <li>Common Collector (Emitter Follower): $A_v \approx 1$, High $Z_{in}$</li>
+                </ul>
+                <h4>3. Bộ dao động & Bộ định thời (555 Timer)</h4>
+                <ul>
+                    <li>Astable 555: $f = \frac{1.44}{(R_A + 2R_B)C}$</li>
+                    <li>Monostable 555: $T = 1.1 RC$</li>
+                    <li>Wien Bridge Oscillator: $f_0 = \frac{1}{2\pi RC}$, feedback fraction $= 1/3$</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data & Scripts -->
+    <script src="exams.js"></script>
+    <script src="extracted_data.js"></script>
+    <script src="app_review.js"></script>
+</body>
+</html>
