@@ -1,24 +1,23 @@
-﻿// Auto-generated OCR extracted question text and options with diagram detection
-const EXTRACTED_QUESTIONS = {
+﻿const EXTRACTED_QUESTIONS = {
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507249399_0.webp":  {
-                                                                      "question":  "How is the transconductance gm of a JFET typically calculated at a given gate-source voltage VGS, assuming the maximum transconductance gm() is known? Vas gm=grno 1 — 21DSS",
+                                                                      "question":  "How is the transconductance gm of a JFET typically calculated at a given gate-source voltage VGS, assuming the maximum transconductance gm() is known? Vas gm=grno 1 — 21DSS IVpl AID",
                                                                       "options":  {
-                                                                                      "A":  "IVpl",
-                                                                                      "B":  "AID",
-                                                                                      "C":  "Vc;s",
-                                                                                      "D":  "rd"
+                                                                                      "A":  "Vc;s rd",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507251648_1.webp":  {
-                                                                      "question":  "For a JFET self-bias amplifier with a bypassed source resistor, what is the approximate voltage gain Av?",
+                                                                      "question":  "For a JFET self-bias amplifier with a bypassed source resistor, what is the approximate voltage gain Av? - grnRS Av—I",
                                                                       "options":  {
-                                                                                      "A":  "- grnRS",
-                                                                                      "B":  "Av—I",
+                                                                                      "A":  "-gmRD",
+                                                                                      "B":  "",
                                                                                       "C":  "",
-                                                                                      "D":  "-gmRD"
+                                                                                      "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507252818_2.webp":  {
                                                                       "question":  "Which FET amplifier configuration is analogous to the BJ T common-collector (emitter-follower)?",
@@ -48,7 +47,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "0.318 Vm",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507256975_5.webp":  {
                                                                       "question":  "What is the logic function of this circuit?",
@@ -88,7 +87,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507262601_9.webp":  {
                                                                       "question":  "What type of ICs contain both linear and digital characteristics?",
@@ -128,25 +127,25 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "square waveform swinging between +12 V and -12 V, inverted with respect to the input",
                                                                                        "D":  "constant voltage of 0 V +12 v 741 -12 v 1"
                                                                                    },
-                                                                       "has_diagram":  true
-                                                                   },
-    "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507271186_13.webp":  {
-                                                                       "question":  "What is the typical range of current gain ß for commonly used BJTs? 1-10",
-                                                                       "options":  {
-                                                                                       "A":  "50-200",
-                                                                                       "B":  "c",
-                                                                                       "C":  "500-1000",
-                                                                                       "D":  "\u003e2000"
-                                                                                   },
                                                                        "has_diagram":  false
                                                                    },
-    "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507272612_14.webp":  {
-                                                                       "question":  "In the r e model, what replaces the base-emitter junction in the AC equivalent circuit? A.",
+    "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507271186_13.webp":  {
+                                                                       "question":  "What is the typical range of current gain ß for commonly used BJTs? 1-10 50-200 c 500-1000",
                                                                        "options":  {
-                                                                                       "A":  "Current source",
-                                                                                       "B":  "Capacitor",
-                                                                                       "C":  "Equivalent resistance",
-                                                                                       "D":  "Inductor"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "\u003e2000"
+                                                                                   },
+                                                                       "has_diagram":  true
+                                                                   },
+    "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507272612_14.webp":  {
+                                                                       "question":  "In the r e model, what replaces the base-emitter junction in the AC equivalent circuit?",
+                                                                       "options":  {
+                                                                                       "A":  "Current source Capacitor Equivalent resistance Inductor",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
                                                                                    },
                                                                        "has_diagram":  true
                                                                    },
@@ -168,47 +167,47 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "3250",
                                                                                        "D":  "87_5Q"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507276184_17.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "This circuit is referred to as a(n)",
                                                                        "options":  {
                                                                                        "A":  "inverting amplifier",
                                                                                        "B":  "noninverting amplifier",
                                                                                        "C":  "unity follower",
-                                                                                       "D":  "integrator This circuit is referred to as a(n)"
+                                                                                       "D":  "integrator"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507277391_18.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to the given figure. The midrange voltage gain of this amplifier is Vout Vin",
                                                                        "options":  {
                                                                                        "A":  "05",
                                                                                        "B":  "",
                                                                                        "C":  "",
-                                                                                       "D":  "-11 Refer to the given figure. The midrange voltage gain of this amplifier is Vout Vin"
+                                                                                       "D":  "-11"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507278732_19.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to the given figure. This amplifier is known as 100 kn",
                                                                        "options":  {
                                                                                        "A":  "an inverting amplifier.",
                                                                                        "B":  "non-inverting amplifier.",
                                                                                        "C":  "voltage-follower.",
-                                                                                       "D":  "common-source amplifier. Refer to the given figure. This amplifier is known as 100 kn"
+                                                                                       "D":  "common-source amplifier."
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507279817_20.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "This circuit is referred to as a(n) c Vo (t)",
                                                                        "options":  {
                                                                                        "A":  "inverting amplifier",
                                                                                        "B":  "noninverting amplifier",
                                                                                        "C":  "differentiator",
-                                                                                       "D":  "integrator This circuit is referred to as a(n) c Vo (t)"
+                                                                                       "D":  "integrator"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507280911_21.webp":  {
                                                                        "question":  "What is the formula for the gain of an inverting amplifier? Av=R1/Rf",
@@ -218,7 +217,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507282062_22.webp":  {
                                                                        "question":  "In the common-emitter configuration, the output voltage is taken from:",
@@ -248,47 +247,47 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  "Ico"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507286170_25.webp":  {
                                                                        "question":  "The common-emitter amplifier typically has input and output impedance levels that are:",
                                                                        "options":  {
-                                                                                       "A":  "Low",
-                                                                                       "B":  "High",
-                                                                                       "C":  "Medium",
-                                                                                       "D":  "Zero"
+                                                                                       "A":  "Low High Medium Zero",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507287485_26.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to this figure. Determine the minimum value of VIN from the following that will saturate this transistor. VIN 1.2 MQ 4.7 kQ - 200",
                                                                        "options":  {
                                                                                        "A":  "13.2 V",
                                                                                        "B":  "12.5 v",
                                                                                        "C":  "0.7 v",
-                                                                                       "D":  "9.4 v Refer to this figure. Determine the minimum value of VIN from the following that will saturate this transistor. VIN 1.2 MQ 4.7 kQ - 200"
+                                                                                       "D":  "9.4 v"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507289025_27.webp":  {
-                                                                       "question":  "What equation describes the drain current ID in the saturation region of a JFET? A. B. c. D. IDSS X IDSS X ID k(VGS — IDSS 1 VGS",
+                                                                       "question":  "What equation describes the drain current ID in the saturation region of a JFET?",
                                                                        "options":  {
-                                                                                       "A":  "2",
-                                                                                       "B":  "VGS",
-                                                                                       "C":  "1",
-                                                                                       "D":  "VT)2"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "IDSS X IDSS X ID k(VGS — IDSS 1 VGS 2 VGS 1 VT)2"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507290947_28.webp":  {
-                                                                       "question":  "A.",
+                                                                       "question":  "",
                                                                        "options":  {
-                                                                                       "A":  "Identify the n-channel D-MOSFET.",
-                                                                                       "B":  "(a)",
-                                                                                       "C":  "(c)",
-                                                                                       "D":  "(d)"
+                                                                                       "A":  "Identify the n-channel D-MOSFET. (a) (c) (d)",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507292242_29.webp":  {
                                                                        "question":  "What happens to the depletion region in an n-channel JFET as V_GS becomes more negative? A",
@@ -301,14 +300,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507293400_30.webp":  {
-                                                                       "question":  "What is the drain current ID for a D-MOSFET when VG\u0027S — O V 7 A. B. C.",
+                                                                       "question":  "What is the drain current ID for a D-MOSFET when VG\u0027S — O V 7",
                                                                        "options":  {
                                                                                        "A":  "",
-                                                                                       "B":  "ID=OA",
-                                                                                       "C":  "IDSS",
-                                                                                       "D":  "ID is undefined"
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "ID=OA IDSS ID is undefined"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507294606_31.webp":  {
                                                                        "question":  "How does a p-channel JFET differ from an n-channel JFET? A",
@@ -331,14 +330,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507298954_33.webp":  {
-                                                                       "question":  "In a P-Type material, what are the majority carriers?",
+                                                                       "question":  "In a P-Type material, what are the majority carriers? Electrons Holes",
                                                                        "options":  {
-                                                                                       "A":  "Electrons",
-                                                                                       "B":  "Holes",
-                                                                                       "C":  "Ions",
-                                                                                       "D":  "Neutrons"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "Ions Neutrons",
+                                                                                       "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507300311_34.webp":  {
                                                                        "question":  "What is the most used semiconductor material in electronics?",
@@ -351,12 +350,12 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507301708_35.webp":  {
-                                                                       "question":  "Calculate the load current (IL) and the Zener diode current (IZ), respectively. IL = 2 mA; IZ = 0 mA IL = 2 mA; IZ = 2 mA A. B. c. D. 1 kn",
+                                                                       "question":  "Calculate the load current (IL) and the Zener diode current (IZ), respectively. IL = 2 mA; IZ = 0 mA IL = 2 mA; IZ = 2 mA",
                                                                        "options":  {
-                                                                                       "A":  "vz=10V",
-                                                                                       "B":  "= 30 mw",
-                                                                                       "C":  "IZ = 2 mA",
-                                                                                       "D":  "IL = 2 mA;"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "1 kn vz=10V = 30 mw IZ = 2 mA IL = 2 mA;"
                                                                                    },
                                                                        "has_diagram":  true
                                                                    },
@@ -371,14 +370,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507304355_37.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Calculate dc at VCE IC(mA) = 15 V and - — 30 9 8 7 6 5 4 3 2 1 O 5 10 15 50 LA 30 IOLA 20 25",
                                                                        "options":  {
                                                                                        "A":  "30",
                                                                                        "B":  "50",
                                                                                        "C":  "110",
-                                                                                       "D":  "200 VCE(V) Calculate dc at VCE IC(mA) = 15 V and - — 30 9 8 7 6 5 4 3 2 1 O 5 10 15 50 LA 30 IOLA 20 25"
+                                                                                       "D":  "200 VCE(V)"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507305457_38.webp":  {
                                                                        "question":  "What is the benefit of using a collector-feedback bias?",
@@ -398,7 +397,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "By applying Kirchhoffs Voltage Law to the output loop",
                                                                                        "D":  "By calculating the power dissipation"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507308076_40.webp":  {
                                                                        "question":  "For linear amplification with minmum distortion, where should the dc operating point ideally be located?",
@@ -461,14 +460,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507316303_46.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Calculate the output voltage if VI = 500 kn 250 kn 100 kn 50 kQ = 700 mV. 500 kn",
                                                                        "options":  {
                                                                                        "A":  "",
                                                                                        "B":  "",
                                                                                        "C":  "12 v",
-                                                                                       "D":  "-12 v Calculate the output voltage if VI = 500 kn 250 kn 100 kn 50 kQ = 700 mV. 500 kn"
+                                                                                       "D":  "-12 v"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "2b4b45ed-226c-4cea-a677-91062ea834e9_1788507317646_47.webp":  {
                                                                        "question":  "In a Voltage-Controlled Voltage Source (VCVS), how is the scaling factor k defined?",
@@ -498,7 +497,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862854994-0.webp":  {
                                                                       "question":  "What are the main types of Bipolar Junction Transistors (BJTs)?",
@@ -531,14 +530,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862858086-3.webp":  {
-                                                                      "question":  "For a JFET fixed-bias amplifier, what is the ideal AC input impedance Zi? A.",
+                                                                      "question":  "For a JFET fixed-bias amplifier, what is the ideal AC input impedance Zi?",
                                                                       "options":  {
                                                                                       "A":  "",
                                                                                       "B":  "",
                                                                                       "C":  "",
                                                                                       "D":  "RD II"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862858886-4.webp":  {
                                                                       "question":  "What happens to the voltage gain in a Self-Bias JFET amplifier if R_S is unbypassed? A",
@@ -571,14 +570,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862861219-7.webp":  {
-                                                                      "question":  "",
+                                                                      "question":  "In a bridge rectifier, PIV rating of each diode should be at least: 2Vm",
                                                                       "options":  {
-                                                                                      "A":  "In a bridge rectifier, PIV rating of each diode should be at least:",
-                                                                                      "B":  "2Vm",
-                                                                                      "C":  "O_5Vm",
-                                                                                      "D":  "Vrms"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "O_5Vm Vrms",
+                                                                                      "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862862030-8.webp":  {
                                                                       "question":  "v-5V Determine the peak value of the output waveform. (Assume the diode is ideal)",
@@ -611,7 +610,7 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862864562-11.webp":  {
-                                                                       "question":  "In a comparator, if the noninverting (+) input voltage is greater than the inverting ( ) input, what is the output state?",
+                                                                       "question":  "Question: 1 1 In a comparator, if the noninverting (+) input voltage is greater than the inverting ( ) input, what is the output state?",
                                                                        "options":  {
                                                                                        "A":  "Low voltage level.",
                                                                                        "B":  "High voltage level.",
@@ -648,7 +647,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862867467-15.webp":  {
                                                                        "question":  "In the AC analysis of a common-emitter amplifier, the voltage gain Av is approximately: RC/RE -RC/re",
@@ -658,7 +657,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862868203-16.webp":  {
                                                                        "question":  "In the r e model, what replaces the base-emitter junction in the AC equivalent circuit? A",
@@ -678,7 +677,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "\u003c IOR2",
                                                                                        "D":  "\u003c IOR2"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862869940-18.webp":  {
                                                                        "question":  "What is the slew rate of an op-amp? A",
@@ -691,7 +690,7 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862870661-19.webp":  {
-                                                                       "question":  "Calculate the input voltage if RI",
+                                                                       "question":  "Question: 1 g Calculate the input voltage if RI",
                                                                        "options":  {
                                                                                        "A":  "-50 mv",
                                                                                        "B":  "",
@@ -798,7 +797,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "6 mA",
                                                                                        "D":  "None of the other choices"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862878807-30.webp":  {
                                                                        "question":  "How does a p-channel JFET differ from an n-channel JFET?",
@@ -811,14 +810,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862879535-31.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Referring to this transfer curve, determine ID at VGS = 2 V 4 3 o loss 1 2 3",
                                                                        "options":  {
                                                                                        "A":  "",
                                                                                        "B":  "",
                                                                                        "C":  "0 44 mA",
-                                                                                       "D":  "0.90 mA Referring to this transfer curve, determine ID at VGS = 2 V 4 3 o loss 1 2 3"
+                                                                                       "D":  "0.90 mA"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862880250-32.webp":  {
                                                                        "question":  "What is the term for the energy gap that electrons in the valence band must overcome to become conduction electrons?",
@@ -851,14 +850,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862882500-35.webp":  {
-                                                                       "question":  "A semiconductor material that has been subjected to the doping process is called: A",
+                                                                       "question":  "",
                                                                        "options":  {
-                                                                                       "A":  "Intrinsic",
-                                                                                       "B":  "Extrinsic",
-                                                                                       "C":  "Compound",
-                                                                                       "D":  "pure"
+                                                                                       "A":  "semiconductor material that has been subjected to the doping process is called: A Intrinsic Extrinsic Compound pure",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862883321-36.webp":  {
                                                                        "question":  "Determine the values of VCB and 1B for this circuit.",
@@ -911,12 +910,12 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862887196-41.webp":  {
-                                                                       "question":  "Refer to figure show below. Calculate the value of Vd? D.8V Refer to figure show below. Calculate the value of VD. +20 v",
+                                                                       "question":  "Refer to figure show below. Calculate the value of Vd? Refer to figure show below. Calculate the value of VD. +20 v 100 MQ o-2kQ R Rs—I kn",
                                                                        "options":  {
-                                                                                       "A":  "100 MQ",
-                                                                                       "B":  "o-2kQ",
-                                                                                       "C":  "R",
-                                                                                       "D":  "Rs—I kn"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "8V"
                                                                                    },
                                                                        "has_diagram":  true
                                                                    },
@@ -948,7 +947,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "2rnA Refer to figure shown below. What is the value of IG? +20 v 100 MQ",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862890363-45.webp":  {
                                                                        "question":  "What is a key characteristic of the noninverting constant-gain multiplier\u0027s voltage gain?",
@@ -968,17 +967,17 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "5(V2 - VI)",
                                                                                        "D":  "15 (v2-v1) 500 kn 250 kn Au 500 kn V2 100 kn 50 kn"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862891824-47.webp":  {
-                                                                       "question":  "D. -12 v Calculate the output voltage if VI = 500 kn 250 kn",
+                                                                       "question":  "Calculate the output voltage if VI = 500 kn 250 kn 100 kn 50 kQ = 700 mV. 500 kn",
                                                                        "options":  {
-                                                                                       "A":  "100 kn",
-                                                                                       "B":  "50 kQ",
-                                                                                       "C":  "= 700 mV.",
-                                                                                       "D":  "500 kn"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "-12 v"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "61c467e9-16ac-4578-aacd-fd72eca2cba1_1777862892585-48.webp":  {
                                                                        "question":  "Why are op-amps used in instrumentation circuits?",
@@ -1011,14 +1010,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863076837-1.webp":  {
-                                                                      "question":  "",
+                                                                      "question":  "Referring to the following figure, calculate gm for VGSQ - - -1.25 v. 4 mS",
                                                                       "options":  {
                                                                                       "A":  "",
                                                                                       "B":  "2.5 ms",
                                                                                       "C":  "2.75 ms",
-                                                                                      "D":  "3.25 ms Referring to the following figure, calculate gm for VGSQ - - -1.25 v. 4 mS"
+                                                                                      "D":  "3.25 ms"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863077552-2.webp":  {
                                                                       "question":  "What is a key characteristic of the Common-Gate configuration\u0027s input impedance? A",
@@ -1031,14 +1030,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863078294-3.webp":  {
-                                                                      "question":  "In a Source-Follower (Common-Drain) configuration, the output is taken from:",
+                                                                      "question":  "In a Source-Follower (Common-Drain) configuration, the output is taken from: Drain. Gate. Source.",
                                                                       "options":  {
-                                                                                      "A":  "Drain.",
-                                                                                      "B":  "Gate.",
-                                                                                      "C":  "Source.",
-                                                                                      "D":  "Load"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  "_ Load"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863079017-4.webp":  {
                                                                       "question":  "What parameter represents the ratio of change in drain current to change in gate-to-source voltage in a FET? A",
@@ -1068,7 +1067,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "",
                                                                                       "D":  "None of the other"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863081341-7.webp":  {
                                                                       "question":  "Determine the peak for both half cycles of the output waveform.",
@@ -1088,7 +1087,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "0.7 v",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863082809-9.webp":  {
                                                                       "question":  "Once the dc Q-point is determined using load-line analysis, the diode can be replaced by its equivalent for those operating conditions",
@@ -1098,7 +1097,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "DC resistance",
                                                                                       "D":  "Ideal model"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863083561-10.webp":  {
                                                                        "question":  "What is a key advantage of dedicated comparator ICs over op-amps used as comparators? A",
@@ -1138,7 +1137,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863086453-14.webp":  {
                                                                        "question":  "What is the approximate voltage gain of an emitter follower (common-collector BJT amplifier)?",
@@ -1148,17 +1147,17 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863087167-15.webp":  {
-                                                                       "question":  "Which parameter best reflects current gain in a BJT?",
+                                                                       "question":  "Which parameter best reflects current gain in a BJT? Which parameter best reflects current gain in a BJT?",
                                                                        "options":  {
                                                                                        "A":  "",
                                                                                        "B":  "ro",
                                                                                        "C":  "ß",
-                                                                                       "D":  "zo Which parameter best reflects current gain in a BJT?"
+                                                                                       "D":  "zo"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863087877-16.webp":  {
                                                                        "question":  "Which bias configuration for BJT includes a voltage divider and an emitter resistor?",
@@ -1178,7 +1177,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                        "C":  "11 Calculate the overall voltage gain of the circuit if RI - - 100 Q and Rf=lk",
                                                                                        "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863089404-18.webp":  {
                                                                        "question":  "What is a typical use of operational amplifiers?",
@@ -1201,24 +1200,24 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863090934-20.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to the given figure. The voltage gain of this amplifier is 100 kn Vout",
                                                                        "options":  {
                                                                                        "A":  "100",
                                                                                        "B":  "",
                                                                                        "C":  "20",
-                                                                                       "D":  "21 Refer to the given figure. The voltage gain of this amplifier is 100 kn Vout"
+                                                                                       "D":  "21"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863091686-21.webp":  {
-                                                                       "question":  "In a CMOS differential amplifier, the input is applied to:",
+                                                                       "question":  "In a CMOS differential amplifier, the input is applied to: Emitters Drains Bases",
                                                                        "options":  {
-                                                                                       "A":  "Emitters",
-                                                                                       "B":  "Drains",
-                                                                                       "C":  "Bases",
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
                                                                                        "D":  "Gates"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863092389-22.webp":  {
                                                                        "question":  "When a transistor is in the saturation mode, it acts like a(n): A",
@@ -1241,14 +1240,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863093887-24.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to this figure. The value of VCE is: Vee + _ = 25 470 Q",
                                                                        "options":  {
                                                                                        "A":  "ggv",
                                                                                        "B":  "92V",
                                                                                        "C":  "07 v",
-                                                                                       "D":  "19.3 v Refer to this figure. The value of VCE is: Vee + _ = 25 470 Q"
+                                                                                       "D":  "19.3 v"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863094627-25.webp":  {
                                                                        "question":  "The input characteristics of the Common-Base configuration show the relationship between:",
@@ -1291,14 +1290,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863097969-29.webp":  {
-                                                                       "question":  "",
+                                                                       "question":  "Refer to this portion of a specification sheet. Determine the values of reverse-gate- source voltage and gate current if the FET was forced to accept it. MAXIMUM RATINGS Rating Drain-Source Voltage Drain-Gate Voltage Reverse Gate-Source Voltage Gate Current Total Device Dissipation @ T Decrease above 250C Junction Temperature Range - 250C Symbol Vog VOG p Value 25 25 -25 10 310 2.82 125 -65 to +150 Vdc Vdc mW/OC Storage Channel Temperature Range",
                                                                        "options":  {
                                                                                        "A":  "25 Vdc, 310 mw",
                                                                                        "B":  "-25 Vdc, 12.4 mAdc",
                                                                                        "C":  "50 Vdc, 12.4 r-nAdc",
-                                                                                       "D":  "-25 Vdc, 10 rnAdc Refer to this portion of a specification sheet. Determine the values of reverse-gate- source voltage and gate current if the FET was forced to accept it. MAXIMUM RATINGS Rating Drain-Source Voltage Drain-Gate Voltage Reverse Gate-Source Voltage Gate Current Total Device Dissipation @ T Decrease above 250C Junction Temperature Range - 250C Symbol Vog VOG p Value 25 25 -25 10 310 2.82 125 -65 to +150 Vdc Vdc mW/OC Storage Channel Temperature Range"
+                                                                                       "D":  "-25 Vdc, 10 rnAdc"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863098820-30.webp":  {
                                                                        "question":  "What is \"pinch-off\u0027 in a JFET? A",
@@ -1351,24 +1350,24 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863102501-35.webp":  {
-                                                                       "question":  "A semiconductor material that has been subjected to the doping process is called: A",
-                                                                       "options":  {
-                                                                                       "A":  "Intrinsic",
-                                                                                       "B":  "Extrinsic",
-                                                                                       "C":  "Compound",
-                                                                                       "D":  "pure"
-                                                                                   },
-                                                                       "has_diagram":  false
-                                                                   },
-    "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863103336-36.webp":  {
                                                                        "question":  "",
                                                                        "options":  {
-                                                                                       "A":  "In a load-line analysis, the Q-point (quiescent point) is found at:",
-                                                                                       "B":  "VCE=O",
-                                                                                       "C":  "The intersection of the load line and the transistor characteristic curve",
-                                                                                       "D":  "The midpoint of RC"
+                                                                                       "A":  "semiconductor material that has been subjected to the doping process is called: A Intrinsic Extrinsic Compound pure",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
+                                                                   },
+    "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863103336-36.webp":  {
+                                                                       "question":  "In a load-line analysis, the Q-point (quiescent point) is found at: VCE=O The intersection of the load line and the transistor characteristic curve The midpoint of RC",
+                                                                       "options":  {
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  ""
+                                                                                   },
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863104059-37.webp":  {
                                                                        "question":  "What is the primary purpose of DC biasing in BJT circuits?",
@@ -1421,11 +1420,11 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863108453-42.webp":  {
-                                                                       "question":  "When analyzing FET biasing graphically, which cutves are plotted to find the Q-point? A",
+                                                                       "question":  "When analyzing FET biasing graphically, which cutves are plotted to find the Q-point? A IC vs. VCE and the load line ID vs. VDS and the load line ID vs. VGS (transfer characteristic) and the bias line/curve",
                                                                        "options":  {
-                                                                                       "A":  "IC vs. VCE and the load line",
-                                                                                       "B":  "ID vs. VDS and the load line",
-                                                                                       "C":  "ID vs. VGS (transfer characteristic) and the bias line/curve",
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
                                                                                        "D":  "VGSvs_ VDS"
                                                                                    },
                                                                        "has_diagram":  true
@@ -1441,14 +1440,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863109920-44.webp":  {
-                                                                       "question":  "-MOSFET be biased with VGS — Can a D No, negative VGS is required Yes, drain current will be IDSS Yes, but transistor is in cutoff A.",
+                                                                       "question":  "-MOSFET be biased with VGS — Can a D No, negative VGS is required Yes, drain current will be IDSS Yes, but transistor is in cutoff",
                                                                        "options":  {
                                                                                        "A":  "",
                                                                                        "B":  "",
                                                                                        "C":  "",
                                                                                        "D":  "Only for p-channel D-MOSFETs"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863110669-45.webp":  {
                                                                        "question":  "Calculate the output voltage Vo if VI = —V2 = 300 mV. 500 kn",
@@ -1491,14 +1490,14 @@ const EXTRACTED_QUESTIONS = {
                                                                        "has_diagram":  false
                                                                    },
     "65063eeb-b82e-4dca-adea-6d6a9cb5b637_1777863113810-49.webp":  {
-                                                                       "question":  "D. -6.6 v Calculate the output voltage if VI",
+                                                                       "question":  "Calculate the output voltage if VI 330 kn 33 k\") 10 kn = -0.2 v and = ov",
                                                                        "options":  {
-                                                                                       "A":  "330 kn",
-                                                                                       "B":  "33 k\")",
-                                                                                       "C":  "10 kn",
-                                                                                       "D":  "= -0.2 v and = ov"
+                                                                                       "A":  "",
+                                                                                       "B":  "",
+                                                                                       "C":  "",
+                                                                                       "D":  "-6.6 v"
                                                                                    },
-                                                                       "has_diagram":  false
+                                                                       "has_diagram":  true
                                                                    },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862964761-0.jpg":  {
                                                                      "question":  "In a Common-Gate amplifier, which terminal is common to both input and output?",
@@ -1521,12 +1520,12 @@ const EXTRACTED_QUESTIONS = {
                                                                      "has_diagram":  false
                                                                  },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862966624-2.jpg":  {
-                                                                     "question":  "(Choose 1 A. 2 mS answer) Referring to the transfer characteristics shown below, calculate gm at VGSQ = —1 V. 8 7 6 5 4 3",
+                                                                     "question":  "(Choose 1",
                                                                      "options":  {
-                                                                                     "A":  "2",
-                                                                                     "B":  "-4",
-                                                                                     "C":  "-3",
-                                                                                     "D":  "-2"
+                                                                                     "A":  "2 mS answer) Referring to the transfer characteristics shown below, calculate gm at VGSQ = —1 V. 8 7 6 5 4 3 2 -4 -3 -2",
+                                                                                     "B":  "",
+                                                                                     "C":  "",
+                                                                                     "D":  ""
                                                                                  },
                                                                      "has_diagram":  true
                                                                  },
@@ -1551,14 +1550,14 @@ const EXTRACTED_QUESTIONS = {
                                                                      "has_diagram":  false
                                                                  },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862969238-5.jpg":  {
-                                                                     "question":  "The center-tapped full-wave rectifier requires:",
+                                                                     "question":  "The center-tapped full-wave rectifier requires: Four diodes Two diodes and no transformer Two diodes and center-tap transformer",
                                                                      "options":  {
-                                                                                     "A":  "Four diodes",
-                                                                                     "B":  "Two diodes and no transformer",
-                                                                                     "C":  "Two diodes and center-tap transformer",
-                                                                                     "D":  "single diode"
+                                                                                     "A":  "single diode",
+                                                                                     "B":  "",
+                                                                                     "C":  "",
+                                                                                     "D":  ""
                                                                                  },
-                                                                     "has_diagram":  false
+                                                                     "has_diagram":  true
                                                                  },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862970005-6.jpg":  {
                                                                      "question":  "Determine the average value of the current through the load resistor.",
@@ -1611,24 +1610,24 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862973824-11.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "This circuit is an example of a Vi2",
                                                                       "options":  {
                                                                                       "A":  "comparator",
                                                                                       "B":  "555 timer",
                                                                                       "C":  "to A converter",
-                                                                                      "D":  "ladder network This circuit is an example of a Vi2"
+                                                                                      "D":  "ladder network"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862974657-12.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "What is the formula for the VCO center frequency using a 566 IC? 2 RC 1.44",
                                                                       "options":  {
-                                                                                      "A":  "What is the formula for the VCO center frequency using a 566 IC?",
-                                                                                      "B":  "2",
-                                                                                      "C":  "RC",
-                                                                                      "D":  "1.44"
+                                                                                      "A":  "",
+                                                                                      "B":  "B",
+                                                                                      "C":  "",
+                                                                                      "D":  "D"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862975444-13.jpg":  {
                                                                       "question":  "Which of the following should be done to obtain the ac equivalent of a network?",
@@ -1641,12 +1640,12 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862976171-14.jpg":  {
-                                                                      "question":  "(Choose 1 answer) What is the formula for rc (input resistance in the small-signal model)?",
+                                                                      "question":  "(Choose 1 What is the formula for rc (input resistance in the small-signal model)?",
                                                                       "options":  {
                                                                                       "A":  "re vcc/1B",
                                                                                       "B":  "26mV/1E",
                                                                                       "C":  "re == VBE/Ic — l/hfe",
-                                                                                      "D":  ""
+                                                                                      "D":  "answer)"
                                                                                   },
                                                                       "has_diagram":  false
                                                                   },
@@ -1658,7 +1657,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "common-emitter",
                                                                                       "D":  "emitter-follower"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862977908-16.jpg":  {
                                                                       "question":  "In AC equivalent circuit analysis, the circuit is obtained by:",
@@ -1671,14 +1670,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862978663-17.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "This circuit is referred to as a(n) c",
                                                                       "options":  {
                                                                                       "A":  "inverting amplifier",
                                                                                       "B":  "noninverting amplifier",
                                                                                       "C":  "differentiator",
-                                                                                      "D":  "integrator This circuit is referred to as a(n) c"
+                                                                                      "D":  "integrator"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862979390-18.jpg":  {
                                                                       "question":  "How many input terminals does a basic op-amp symbol show?",
@@ -1688,7 +1687,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862980103-19.jpg":  {
                                                                       "question":  "What happens to the output signal polarity when the input is applied to the inverting input (noninverting Input grounded)? C",
@@ -1721,7 +1720,7 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862982321-22.jpg":  {
-                                                                      "question":  "(Choose 1 answer) The input characteristics of the Common-Base configuration show the relationship between:",
+                                                                      "question":  "(Choose 1 The input characteristics of the Common-Base configuration show the relationship between:",
                                                                       "options":  {
                                                                                       "A":  "Ic and VCE",
                                                                                       "B":  "1B and v BE",
@@ -1751,14 +1750,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862984645-25.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "In this circuit = 100 and VIN = 8 V. The value of RB that will produce saturation is: +20 v 2.5 kn",
                                                                       "options":  {
                                                                                       "A":  "92 kQ",
                                                                                       "B":  "9.1 MQ",
                                                                                       "C":  "100",
-                                                                                      "D":  "150 kQ In this circuit = 100 and VIN = 8 V. The value of RB that will produce saturation is: +20 v 2.5 kn"
+                                                                                      "D":  "150 kQ"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862985434-26.jpg":  {
                                                                       "question":  "In which operating mode are both the emitter-base and collector base Junctions of a transistor reverse biased?",
@@ -1771,12 +1770,12 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862986195-27.jpg":  {
-                                                                      "question":  "Which FET type is preferred for integrated circuits?",
+                                                                      "question":  "Which FET type is preferred for integrated circuits? BJT MOSFET",
                                                                       "options":  {
-                                                                                      "A":  "BJT",
-                                                                                      "B":  "MOSFET",
-                                                                                      "C":  "JFET",
-                                                                                      "D":  "ME-SFET"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "JFET ME-SFET",
+                                                                                      "D":  ""
                                                                                   },
                                                                       "has_diagram":  true
                                                                   },
@@ -1798,7 +1797,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET)",
                                                                                       "D":  "Diode for Alternating Current (Diac)"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862988488-30.jpg":  {
                                                                       "question":  "For an n-channel E-MOSFET, what polarity of V GS is required to create a channel?",
@@ -1858,20 +1857,20 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "o_7V 1_2V",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862993069-36.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "Calculate lcsat• 3.3 kn 91kQ 110 kn 10 BF p -75 510 n 50 pF",
                                                                       "options":  {
                                                                                       "A":  "1.86 mA",
                                                                                       "B":  "4.72 mA",
                                                                                       "C":  "5.45 mA",
-                                                                                      "D":  "35.29 mA Calculate lcsat• 3.3 kn 91kQ 110 kn 10 BF p -75 510 n 50 pF"
+                                                                                      "D":  "35.29 mA"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862993828-37.jpg":  {
-                                                                      "question":  "(Choose 1 answer) What is the primary goal when setting a Q-point in a transistor amplifier?",
+                                                                      "question":  "(Choose 1 What is the primary goal when setting a Q-point in a transistor amplifier?",
                                                                       "options":  {
                                                                                       "A":  "Reach maximum Ic",
                                                                                       "B":  "Maximize noise",
@@ -1898,7 +1897,7 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862996013-40.jpg":  {
                                                                       "question":  "In which region does a BJ T operate for amplification?",
@@ -1911,14 +1910,14 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  false
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862996746-41.jpg":  {
-                                                                      "question":  "(Choose 1 answer) What is required for an E-MOSFET to turn ON and conduct current? B. C. D.",
+                                                                      "question":  "(Choose 1 What is required for an E-MOSFET to turn ON and conduct current?",
                                                                       "options":  {
-                                                                                      "A":  "VGS must be 0 V",
-                                                                                      "B":  "VGS must be less than threshold voltage (VT)",
-                                                                                      "C":  "IVGSI must be greater than threshold voltage (VT)",
-                                                                                      "D":  "IG must be positive"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  "VGS must be 0 V VGS must be less than threshold voltage (VT) IVGSI must be greater than threshold voltage (VT) IG must be positive"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862997509-42.jpg":  {
                                                                       "question":  "How is the Q-point typically determined in FET circuits?",
@@ -1931,64 +1930,64 @@ const EXTRACTED_QUESTIONS = {
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862998259-43.jpg":  {
-                                                                      "question":  "Can a D-MOSFET be biased with VG\u0027S = O A. B. C. D.",
+                                                                      "question":  "",
                                                                       "options":  {
-                                                                                      "A":  "No, negative VGS is required",
-                                                                                      "B":  "Yes, drain current will be",
-                                                                                      "C":  "Yes, but transistor is in cutoff",
-                                                                                      "D":  "Only for p-channel D-MOSFETs"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  "No, negative VGS is required Yes, drain current will be Yes, but transistor is in cutoff Only for p-channel D-MOSFETs"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862999020-44.jpg":  {
-                                                                      "question":  "What is a key difference in DC analysis retween 3JT and FET configurations? A.",
+                                                                      "question":  "What is a key difference in DC analysis retween 3JT and FET configurations?",
                                                                       "options":  {
-                                                                                      "A":  "BJT analysis always graphical, FET analysis always mathematical.",
-                                                                                      "B":  "BJT relationships are generally linear, FET relationships are nonlinear.",
-                                                                                      "C":  "FET analysis requires knowing B, BJT requires V_P.",
-                                                                                      "D":  "aJT uses Kirchhofs laws, FET uses Ohm\u0027s Law exclusively."
+                                                                                      "A":  "BJT analysis always graphical, FET analysis always mathematical. BJT relationships are generally linear, FET relationships are nonlinear. FET analysis requires knowing B, BJT requires V_P. aJT uses Kirchhofs laws, FET uses Ohm\u0027s Law exclusively.",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777862999786-45.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "Calculate the input voltage if the final output is 10.08 V. 10 kn 100 kn vo",
                                                                       "options":  {
                                                                                       "A":  "-1.05 v",
                                                                                       "B":  "0.168 V",
                                                                                       "C":  "0.525 v",
-                                                                                      "D":  "4.2 V Calculate the input voltage if the final output is 10.08 V. 10 kn 100 kn vo"
+                                                                                      "D":  "4.2 V"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777863000586-46.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "Calculate the output voltage if VI 500 250 kn = 300 mv and V2 = 700 mv. 500 kn 100 kn 50 kQ",
                                                                       "options":  {
                                                                                       "A":  "",
                                                                                       "B":  "10 v",
                                                                                       "C":  "-IOV",
-                                                                                      "D":  "OV Calculate the output voltage if VI 500 250 kn = 300 mv and V2 = 700 mv. 500 kn 100 kn 50 kQ"
+                                                                                      "D":  "OV"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777863001367-47.jpg":  {
-                                                                      "question":  "Calculate the output voltage if VI — - = 0.15 v.",
+                                                                      "question":  "Calculate the output voltage if VI — - = 0.15 v. 330 kn 33 kn 10 kn",
                                                                       "options":  {
-                                                                                      "A":  "330 kn",
-                                                                                      "B":  "33 kn",
-                                                                                      "C":  "10 kn",
-                                                                                      "D":  "6.45 V"
+                                                                                      "A":  "",
+                                                                                      "B":  "",
+                                                                                      "C":  "",
+                                                                                      "D":  "-6.45 V"
                                                                                   },
                                                                       "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777863002145-48.jpg":  {
-                                                                      "question":  "",
+                                                                      "question":  "Calculate the output of the second stage op-amp if VI - - 25 mV. 10 kn 100",
                                                                       "options":  {
                                                                                       "A":  "-0.075 V",
                                                                                       "B":  "0.525 V",
                                                                                       "C":  "0.06 v",
-                                                                                      "D":  "4.2 V Calculate the output of the second stage op-amp if VI - - 25 mV. 10 kn 100"
+                                                                                      "D":  "4.2 V"
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   },
     "68e1a226-6b1e-4906-af52-3909d8b6faa9_1777863002940-49.jpg":  {
                                                                       "question":  "What is the ideal voltage gain of a voltage buffer?",
@@ -1998,6 +1997,6 @@ const EXTRACTED_QUESTIONS = {
                                                                                       "C":  "",
                                                                                       "D":  ""
                                                                                   },
-                                                                      "has_diagram":  false
+                                                                      "has_diagram":  true
                                                                   }
 };

@@ -70,18 +70,24 @@ function getQuestionData(q) {
         const extracted = EXTRACTED_QUESTIONS[filename];
 
         if (extracted) {
+            let hasEmptyOpt = false;
             const opts = ['A', 'B', 'C', 'D'].map(letter => {
-                const optText = extracted.options ? (extracted.options[letter] || '') : '';
+                let optText = extracted.options ? (extracted.options[letter] || '') : '';
+                optText = optText.trim();
+                if (!optText) {
+                    hasEmptyOpt = true;
+                    optText = `Phương án ${letter} (Xem trên hình ảnh)`;
+                }
                 return {
                     label: letter,
-                    content: optText || `Phương án ${letter}`,
+                    content: optText,
                     is_correct: letter === q.correct_answer
                 };
             });
 
             const titleLower = (extracted.question || '').toLowerCase();
-            const diagRegex = /(figure|circuit|schematic|curve|graph|table|diagram|shown|referring to|refer to|following figure|this circuit|waveform|calculate.*vo|determine.*vo|determine.*d|determine.*v|calculate.*il|network|characteristic)/i;
-            const hasDiagram = extracted.has_diagram || diagRegex.test(titleLower);
+            const diagRegex = /(figure|circuit|schematic|curve|graph|table|diagram|shown|referring to|refer to|following figure|this circuit|waveform|calculate|determine|network|characteristic)/i;
+            const hasDiagram = Boolean(extracted.has_diagram || diagRegex.test(titleLower) || hasEmptyOpt || !extracted.question || extracted.question.length < 15);
 
             return {
                 title: extracted.question || 'Câu hỏi trắc nghiệm ELC201 (Xem hình vẽ bên dưới):',
@@ -94,7 +100,7 @@ function getQuestionData(q) {
 
     const fallbackOpts = ['A', 'B', 'C', 'D'].map(l => ({
         label: l,
-        content: `Phương án ${l}`,
+        content: `Phương án ${l} (Xem trên hình ảnh)`,
         is_correct: l === q.correct_answer
     }));
 
